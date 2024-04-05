@@ -1,0 +1,37 @@
+{
+  "name": "jobs----api",
+  "version": "1.0.0",
+  "description": "Jobs API, teste para desenvolvedor FullStack que tem como função a realização de um get de uma lista de jobs :)",
+  "main": "src/app.ts",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest --runInBand",
+    "build": "tsc --outDir ./dist",
+    "redist": "npx ts-node src/server.ts",
+    "start": "nodemon src/server.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^4.13.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "http-status": "^1.6.2",
+    "joi": "^17.9.2",
+    "postgres": "^3.3.4"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/jest": "^29.5.1",
+    "@types/node": "^18.16.0",
+    "@types/supertest": "^2.0.12",
+    "jest": "^29.5.0",
+    "nodemon": "^2.0.22",
+    "prisma": "^4.13.0",
+    "supertest": "^6.3.3",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.4"
+  }
+}
